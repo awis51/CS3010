@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registration</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+        .w3-row-padding img {margin-bottom: 12px}
+        /* Set the width of the sidebar to 120px */
+        .w3-sidebar {width: 120px;background: #222;}
+        /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+        #main {margin-left: 120px}
+        /* Remove margins from "page content" on small screens */
+        @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+    </style>
+</head>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+    <!-- Diamond Icon in top left corner -->
+    <i class="fa fa-diamond w3-xxlarge" style="padding-bottom: 10px; padding-top: 10px;"></i>
+    <a href="home.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <i class="fa fa-home w3-xxlarge"></i>
+        <p>HOME</p>
+    </a>
+    <a href="reg.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+        <i class="fa fa-user w3-xxlarge"></i>
+        <p>REGISTRATION</p>
+    </a>
+    <a href="animations.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <i class="fa fa-cogs w3-xxlarge"></i>
+        <p>ANIMATIONS</p>
+    </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+    <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+        <a href="home.html" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+        <a href="reg.html" class="w3-bar-item w3-button" style="width:25% !important">REGISTRATION</a>
+        <a href="animations.html" class="w3-bar-item w3-button" style="width:25% !important">ANIMATIONS</a>
+    </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+    <!-- Header/Home -->
+    <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+        <h1 class="w3-jumbo"> Fill out the form below.</h1>
+        <i class="fa fa-diamond w3-xxxlarge"></i>
+    </header>
+
+
+    <!-- Form Section -->
+    <div class="w3-content w3-justify w3-padding-64 w3-border w3-grey w3-round-large" id="contact">
+        <form action="reg.html" method="get">
+            <div class="w3-row-padding">
+                <div class="w3-container w3-third s1 w3-border w3-round-large w3-dark-grey w3-margin-bottom" style="height:463px">
+                    <label for="user">Username</label>
+                    <p><input class="w3-input w3-padding-2" type="text" id="user" placeholder="Username" required name="Username"></p>
+                    <label for="pass">Password</label>
+                    <p><input class="w3-input w3-padding-2" type="password" id="pass" placeholder="Password" required name="Password"></p>
+                    <label for="pass1">Password again</label>
+                    <p><input class="w3-input w3-padding-2" type="password" id="pass1" placeholder="Enter Password Again" required name="Repeat Password"></p>
+                </div>
+                <div class="w3-container w3-third s1 w3-border w3-round-large w3-dark-grey w3-margin-bottom" style="height:463px">
+                    <label for="fname">First Name</label>
+                    <p><input class="w3-input w3-padding-2" type="text" id="fname" placeholder="First Name" required name="First Name"></p>
+                    <label for="lname">Last Name</label>
+                    <p><input class="w3-input w3-padding-2" type="text" id="lname" placeholder="Last Name" required name="Last Name"></p>
+                    <label for="pnum">Phone Number</label>
+                    <p><input class="w3-input w3-padding-2" type="tel" id="pnum" placeholder="(123) 456-7890" required name="Phone Number"></p>
+                    <label for="email">Email</label>
+                    <p><input class="w3-input w3-padding-2" type="text" id="email" placeholder="Email" required name="Email"></p>
+                </div>
+                <div class="w3-container w3-third s1 w3-border w3-round-large w3-dark-grey w3-margin-bottom">
+                    <label for="addr1">Address 1</label>
+                    <p><input class="w3-input" type="text" id="addr1" placeholder="Address 1" required name="Address 1"></p>
+                    <label for="addr2">Address 2</label>
+                    <p><input class="w3-input" type="text" id="addr2" placeholder="Address 2" required name="Address 2"></p>
+                    <label for="city">City</label>
+                    <p><input class="w3-input" type="text" id="city" placeholder="City" required name="City"></p>
+                    <label for="state">State</label>
+                    <p><select class="w3-select" id="state" name="State">
+                        <option>CHOOSE STATE</option>
+                        <option>Missouri</option>
+                        <option>Illinois</option>
+                        <option>Kansas</option>
+                    </select></p>
+                    <label for="zip">Zip Code</label>
+                    <p><input class="w3-input" type="text" id="zip" placeholder="Zip Code" required name="Zip Code"></p>
+                </div>
+            </div>
+            <div class="w3-row-padding">
+                <div class="w3-container w3-center w3-quarter w3-border w3-round-large w3-dark-grey w3-margin-bottom">
+                    <h4>Select a Gender:</h4>
+                    <label for="male">Male</label>
+                    <input class="w3-input" type="radio" id="male" name="Gender" value="Male">
+                    <label for="female">Female</label>
+                    <input class="w3-input" type="radio" id="female" name="Gender" value="Female">
+                    <label for="other">Other Gender</label>
+                    <input class="w3-input" type="radio" id="other" name="Gender" value="Other">
+                </div>
+                <div class="w3-container w3-center w3-quarter w3-border w3-round-large w3-dark-grey w3-margin-bottom">
+                    <h4>Select Marital Status:</h4>
+                    <label for="married">Married</label>
+                    <input class="w3-input w3-padding-2" type="radio" id="married" name="Marital Status" value="Married">
+                    <label for="divorced">Divorced</label>
+                    <input class="w3-input w3-padding-2" type="radio" id="divorced" name="Marital Status" value="Divorced">
+                    <label for="single">Single</label>
+                    <input class="w3-input w3-padding-2" type="radio" id="single" name="Marital Status" value="Single">
+                </div>
+                <div class="w3-container w3-third w3-border w3-round-large w3-dark-grey w3-margin-bottom">
+                    <h3>Pick Date of Birth:</h3>
+                    <label for="date"></label>
+                    <input type="date" id="date">
+                </div>
+            </div>
+            <div class="w3-container w3-center">
+                <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+                    <i class="fa fa-paper-plane"></i> SUBMIT
+                </button>
+                <button class="w3-button w3-light-grey w3-padding-large" type="reset">
+                    <i class="fa fa-refresh"></i> RESET
+                </button>
+            </div>
+
+        </form>
+        <!-- End Form Section -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-content w3-padding-16 w3-text-grey w3-xlarge">
+        <a href="https://www.facebook.com" target="_blank" class="fa fa-facebook-official w3-hover-opacity"></a>
+        <a href="https://github.com/awis51" target="_blank" class="fa fa-github w3-hover-opacity"></a>
+        <a href="https://www.linkedin.com/in/austin-wisness-098a17170/" target="_blank" class="fa fa-linkedin w3-hover-opacity"></a>
+        <!-- End footer -->
+    </footer>
+    <!-- END PAGE CONTENT -->
+</div>
+</body>
+</html>
